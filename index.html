@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="validation.css">
+	<title>HTML Banking Form</title>
+</head>
+<style>
+table {
+font-family="Ariel";
+}
+</style>
+<body>
+<p>
+<center>
+<form name="Banking_form">
+<table>
+<caption><h2>Loan Application</h2></caption>
+<tr>
+<td>Applicant first name:</td>
+ <td><input type="text" required  name="Fname" ></td>
+ </tr>
+ <tr>
+ <td>Applicant middle initial:</td>
+ <td><input type="text" required name="mname" ></td>
+ </tr>
+<tr>
+<td>Applicant last name:</td>
+<td><input type="text" required name="lname" ></td>
+</tr>
+<tr>
+<td>Applicant address:</td>
+<td><input type="text" required name="adreess" ></td>
+</tr>
+<tr>
+<td>Applicant occupation:</td>
+<td> <input type="text" required name="occupation"></td>
+</tr>
+<tr>
+<td>Applicant employer:</td>
+<td> <input type="text" required name="employer"></td>
+</tr>
+<tr>
+<td>Employer address:</td>
+<td> <input type="text" required name ="empaddress"></td>
+</tr>
+<tr>
+<td>
+Type of loan select element with these options
+</td>
+<td>
+<select>
+<option value ="Commercial">Commercial</option>
+<option value ="Realestate">Real estate</option>
+<option value ="Personal">Personal</option>
+<option value ="Mortgage"> Mortgage</option>
+</select>
+</td>
+</tr>
+<tr>
+<td>Requested amount of loan:</td>
+<td><input type="number" required name="reqamount"></td>
+</tr>
+<tr>
+<td>Radio button elements for loan length</td>
+<td> 
+<input type="radio" value="5y" required name="loanlength">5 years
+<input type="radio" value ="15y" required name="loanlength">15 years
+<input type="radio" value ="30y" required name ="loanlength">30 years
+</td>
+</tr>
+<tr>
+<td>Checkbox group for special conditions</td>
+<td>
+<input type=checkbox name=spec_con  required value =downpayment>I have a down payment<br>
+<input type=checkbox name =spec_con required value =Out-of-state> resident<br>
+<input type=checkbox name =spec_con required value =Married> Married<br>
+<input type=checkbox name =spec_con required value =co-signed>Loan will be co-signed
+</td>
+</tr>
+<tr>
+<td>A text area to allow for additional comments</td>
+<td><textarea name = additonalcomment></textarea></td>
+</tr>
+<tr>
+<td>Applicant email address:</td>
+<td><input type="email" required name="eaddress"></td>
+</tr>
+<tr>
+<td>Applicant telephone number</td>
+<td><input type="tel" required name="phone1"></td>
+</tr>
+<tr>
+<td>Applicant LinkedIn URL</td>
+<td><input type="url" required name="linkedinurl"></td>
+</tr>
+<tr>
+<td></td>
+<td>
+<input type="reset">&nbsp;
+<input type="submit" value="Submit" onclick="alert('Thanks for Submission')";>
+</td>
+</tr>
+</table>
+</form>
+</center>
+</p>
+</body>
+</html>
